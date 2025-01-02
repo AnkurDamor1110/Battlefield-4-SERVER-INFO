@@ -16,7 +16,7 @@ const RightSideBar = () => {
       <h3>Squad</h3>
         <div className="squad-join user">
         
-          <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab1596100550691c84f76_home__join-black.svg" />
+          <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab1596100550691c84f76_home__join-black.svg" alt="join" />
           <span className="user-details">Squad Join</span>
         </div>
       </div>
@@ -24,7 +24,7 @@ const RightSideBar = () => {
       <div className="separator"></div>
       <div className="section online">
       <div className="mod-online">
-        <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab159d334e32483dbbcbb_online.svg" />
+        <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab159d334e32483dbbcbb_online.svg"  alt="online"/>
         <h3 className="user-details">Online</h3>
         </div>
         {onlineUsers.map((user) => (
@@ -41,7 +41,7 @@ const RightSideBar = () => {
       <div className="separator"></div>
       <div className="section offline">
         <div className="mod-offline">
-          <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab15904900760dbfa7f70_offline.svg"/>
+          <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab15904900760dbfa7f70_offline.svg" alt="offline"/>
         <h3 className="user-details">Offline</h3>
         </div>
         {offlineUsers.map((user) => (
