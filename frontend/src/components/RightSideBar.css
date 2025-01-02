@@ -1,0 +1,74 @@
+.sidebar-details {
+  width: 60px; /* Collapsed width */
+  height: 100vh;
+  background-color: transparent; /* Transparent background initially */
+  overflow: hidden;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions */
+  position: fixed;
+  top: 0;
+  right: 0; /* Align sidebar to the right */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.sidebar-details:hover {
+  width: 200px; /* Expanded width on hover */
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly black background on hover */
+}
+
+
+.section h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: white;
+  opacity: 0; /* Hidden in collapsed state */
+  transition: opacity 0.3s ease-in-out; /* Fade-in effect */
+}
+
+.sidebar-details:hover .section h3 {
+  opacity: 1; /* Show header on hover */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+}
+
+.user-details {
+  opacity: 0; /* Hidden details in collapsed state */
+  display: none; /* Hide text in collapsed state */
+  transition: opacity 0.3s ease-in-out; /* Fade-in effect */
+}
+
+.sidebar-details:hover .user-details {
+  display: block;
+  opacity: 1; /* Show details on hover */
+}
+
+/* Separator line hidden initially */
+.separator {
+  opacity: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5); /* Low-opacity white line */
+  margin: 10px 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar-details:hover .separator {
+  opacity: 0.5; /* Show separator on hover with low opacity */
+}
+
+.mod-online{
+  display: flex;
+}
+
+.mod-offline{
+  display: flex;
+}

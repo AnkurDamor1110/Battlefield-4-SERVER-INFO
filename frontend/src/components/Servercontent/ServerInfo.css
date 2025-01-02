@@ -1,0 +1,141 @@
+/* .server-info-container {
+    
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  } */
+  /* *{
+    font-family: Rajdhani, sans-serif;
+  } */
+
+  .server-title {
+    color: #fff;
+    letter-spacing: .1vh;
+    margin-bottom: 1vh;
+    font-family: Rajdhani, sans-serif;
+    font-size: 3.1vh;
+    font-weight: 600;
+    line-height: 3.8vh;
+
+  }
+  
+  .server-details {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .server-details a {
+    color: #61dafb; /* Link color */
+    text-decoration: none;
+  }
+  
+  .server-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .server-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .action-button {
+    width: 28vh;
+    height: 4.8vh;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vh;
+    display: flex;
+    background-color: transparent; /* Explicitly set transparent background */
+    color: white; /* Ensure text color is visible */
+    cursor: pointer; /* Add a pointer cursor for buttons */
+    
+    
+  }
+
+  .action-favorite{
+    width: 14vh;
+    position: relative;
+  }
+  
+  .action-button:hover {
+    background-color: white; /* Optional hover effect */
+    color: black; /* Ensure text is still visible on hover */
+  }
+  
+  .server-stats {
+    font-size: 1rem;
+    text-align: right;
+  }
+  
+  .player-count {
+    font-weight: bold;
+    color: #f7c600;
+  }
+  
+  img{
+    margin-right: 1vh;
+  }
+  .server_l{
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: .1vh;
+    text-transform: uppercase;
+    font-family: Rajdhani, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 600;
+    line-height: 1.8vh
+    
+  }
+
+  .server_de{
+    width: 90vh;
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: .08vh;
+    font-family: Rajdhani, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 600;
+    line-height: 1.8vh;
+  }
+
+  @media (max-width: 768px){
+
+    .server-details{
+      display: flex;
+      flex-direction: column;
+    }
+
+    img{
+      width: fit-content;
+    }
+
+    .server_de{
+      width: 40vh;
+    }
+
+    .server-actions{
+      flex-wrap: wrap;
+      column-gap: 40px;
+    }
+
+    .action-button{
+      width: 20vh;
+    }
+
+  
+    .server_l{
+      width: 40vh;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+
+    .action-button{
+      width: 15vh;
+    }
+  }

@@ -1,0 +1,50 @@
+.main-page {
+  background-image: linear-gradient(rgba(16, 16, 16, .6), rgba(16, 16, 16, .6)),
+    url(https://uploads-ssl.webflow.com/6013fff62154adaa4600f932/601abb0b487fc1bfc56a1c3b_menu__background-30blur.jpg);
+  background-position: 0 0, -70vh -20vh;
+  background-size: auto, 360vh;
+  padding-top: 3vh;
+  padding-bottom: 0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: grid;
+  grid-template-columns: 7% auto 20%;
+  grid-template-rows: 15% auto; /* Two rows: one for the title and one for content */
+  height: 100vh;
+  color: #ffffff;
+}
+
+.server-content {
+  width: 100%; /* Make it flexible */
+  border-bottom: 1px rgba(255, 255, 255, .1);
+  position: relative;
+  /* overflow: auto; */
+  grid-column: 2 / 3; /* Span the middle column */
+  grid-row: 2 / 3; /* Place in the second row */
+  overflow: auto; /* Enable scrolling for overflowing content */
+  scrollbar-width: thin; /* For Firefox: make the scrollbar thinner */
+  scrollbar-color: #fff transparent;
+}
+
+.server_brower {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Rajdhani, sans-serif;
+  font-size: 4vh;
+  font-weight: 600;
+  line-height: 4vh;
+  margin: 3vh 0;
+  grid-column: 2 / 3; /* Span the middle column */
+  grid-row: 1 / 2; /* Place in the first row */
+}
+
+@media (max-width: 768px){
+
+  .main-page{
+    grid-template-columns: 14% auto ;
+  }
+  
+}
