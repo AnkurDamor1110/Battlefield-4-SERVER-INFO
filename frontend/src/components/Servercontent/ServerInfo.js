@@ -8,7 +8,7 @@ const ServerInfo = () => {
       ! RC3-BASEMAPS
       </h1>
       <div className="server-details">
-      <img src='https://cdn.prod.website-files.com/6022d2c0d37628c87d9e16ab/6022d74ce15ae958f20e10a9_america-flag.svg'/>
+      <img src='https://cdn.prod.website-files.com/6022d2c0d37628c87d9e16ab/6022d74ce15ae958f20e10a9_america-flag.svg' alt='flage'/>
         <span className='server_l'>
           CONQUEST LARGE - SIEGE OF SHANGHAI - NORMAL - 60HZ </span>
         <div className='server_de'>
