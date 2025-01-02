@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/serverInfo', // Backend URL 
+    baseURL: 'https://battlefield-4-server-info.onrender.com/serverInfo', // Backend URL 
 });
 
 // Get all products
