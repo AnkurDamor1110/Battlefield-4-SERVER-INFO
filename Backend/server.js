@@ -5,7 +5,7 @@ app.use(express.json());
 const serverInfo = require('./Data/serverInfoData');
 
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['https://battlefield-4-server-info.netlify.app'];
 
 app.use(cors({
     origin: (origin, callback) => {
