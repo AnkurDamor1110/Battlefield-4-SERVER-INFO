@@ -12,8 +12,11 @@ const RightSideBar = () => {
 
   return (
     <div className="sidebar-details">
-      <div className="">
-      <h3>Squad</h3>
+      <div >
+        <div className="mod-squad">
+        <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab15999e303e7c202c28c_squad.svg" alt="squad"/>
+      <h3 className="user-details" >Squad</h3>
+      </div>
         <div className="squad-join user">
         
           <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab1596100550691c84f76_home__join-black.svg" alt="join" />

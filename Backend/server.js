@@ -5,7 +5,7 @@ app.use(express.json());
 const serverInfo = require('./Data/serverInfoData');
 
 
-const allowedOrigins = ['http://localhost:3000']; // Correct origin without trailing slash
+const allowedOrigins = ['http://localhost:3000'];
 
 app.use(cors({
     origin: (origin, callback) => {
